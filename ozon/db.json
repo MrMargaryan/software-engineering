@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "email": "tea@gmail.com",
+      "password": "$2a$10$VHkwk.Of2R3GRMwNZLK4zucrZm121FZwJaTLhgxVxTal0r/OmlJUy",
+      "id": 1
+    },
+    {
+      "email": "hamlet@gmail.com",
+      "password": "$2a$10$Y31b/.pZ0a.bs8R0rIVDP.EDCFozFaXkBBq81NpQWSf.7ytT9auWu",
+      "id": 2
+    },
+    {
+      "email": "leonid@gmail.com",
+      "password": "$2a$10$3o6d2SADcFm8qITGsmeTy.gRQp/HwKuejgqevHDS9RYUyO4xo.8gq",
+      "id": 3
+    }
+  ]
+}
