@@ -56,7 +56,7 @@ const Login = () => {
         error && <Alert variant="danger">{error}</Alert>
       }
       <h1>Вход</h1>
-      <Form>
+      <Form data-testid="form" onSubmit={logIn}>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Почта</Form.Label>
           <Form.Control value={email} onChange={onEmailChange} type="email" placeholder="nozo@gmail.com" />
@@ -67,7 +67,7 @@ const Login = () => {
           <Form.Control value={password} onChange={onPasswordChange} type="password" placeholder="********" />
         </Form.Group>
 
-        <Button variant="success" type="submit" onClick={logIn}>
+        <Button variant="success" type="submit">
           Войти
         </Button>
       </Form>

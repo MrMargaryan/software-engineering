@@ -14,6 +14,11 @@
       "email": "leonid@gmail.com",
       "password": "$2a$10$3o6d2SADcFm8qITGsmeTy.gRQp/HwKuejgqevHDS9RYUyO4xo.8gq",
       "id": 3
+    },
+    {
+      "email": "hello@gmail.com",
+      "password": "$2a$10$j0zBf7LeW3Nz4lPnHHSI8.C/rOoPWwptX06jrMB6.Xi882DZVCb2e",
+      "id": 4
     }
   ]
 }
