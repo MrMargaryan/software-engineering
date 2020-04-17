@@ -9,11 +9,9 @@ const Auth = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
+    // Декодируем JWT
     const email = localStorage.getItem('token') && JSON.parse(window.atob(localStorage.getItem('token').split('.')[1].replace('-', '+').replace('_', '/'))).email
-    // const email = JSON.parse(window.atob(localStorage.getItem('token').split('.')[1].replace('-', '+').replace('_', '/'))).email
-    if (email) {
-      dispatch(login(email))
-    }
+    email && dispatch(login(email))
   }, [])
 
   const logOut = () => {

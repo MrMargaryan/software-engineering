@@ -15,11 +15,13 @@ const Login = () => {
   const [error, setError] = useState('')
 
   const onEmailChange = event => {
+    // Очищаем сообщение об ошибке
     setError('')
     setEmail(event.target.value)
   }
 
   const onPasswordChange = event => {
+    // Очищаем сообщение об ошибке
     setError('')
     setPassword(event.target.value)
   }
@@ -27,6 +29,7 @@ const Login = () => {
   const logIn = async event => {
     event.preventDefault()
 
+    // Для входа необходимы почта и пароль
     axios.post('http://localhost:3000/login', {
       "email": email,
       "password": password
@@ -34,7 +37,9 @@ const Login = () => {
       .then(response => {
         console.log(response)
         dispatch(login(email, response.data))
+        // Сохраняем JWT в localStorage для того, чтобы идентифицировать пользователя через некоторое время
         localStorage.setItem('token', response.data.accessToken)
+        // Автоматический переход на главную страницу
         history.push('/')
       })
       .catch(error => {

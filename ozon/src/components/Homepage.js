@@ -12,7 +12,6 @@ const Homepage = () => {
           ? <h1>Добро Пожаловать, {email}</h1>
           : <h1>Аналог OZON</h1>
       }
-      {/* <h1>Аналог OZON</h1> */}
     </Jumbotron>
   )
 }
